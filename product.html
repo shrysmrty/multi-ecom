@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Listing - E-Shop</title>
+  <link rel="stylesheet" href="product.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">E-Shop</h1>
+      <ul class="nav-links">
+        <li><a href="ecom.html">Home</a></li>
+        <li><a href="product-listing.html">Shop</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Cart</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Product Listing -->
+  <main class="product-listing">
+    <div class="container">
+      <div class="filters">
+        <h2>Shop Products</h2>
+        <div class="filter-options">
+          <div class="filter-category">
+            <label for="category">Category:</label>
+            <select id="category">
+              <option value="all">All</option>
+              <option value="electronics">Electronics</option>
+              <option value="clothing">Clothing</option>
+              <option value="home-living">Home & Living</option>
+              <option value="sports">Sports</option>
+            </select>
+          </div>
+          <div class="filter-sort">
+            <label for="sort">Sort By:</label>
+            <select id="sort">
+              <option value="default">Default</option>
+              <option value="low-high">Price: Low to High</option>
+              <option value="high-low">Price: High to Low</option>
+              <option value="newest">Newest</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-grid">
+        <!-- Dynamic Products (Example Hardcoded) -->
+        <div class="product-item" data-category="electronics">
+          <img src="https://via.placeholder.com/150" alt="Product">
+          <h3>Smartphone</h3>
+          <p>$300.00</p>
+          <button class="btn add-to-cart">Add to Cart</button>
+          <button class="btn more-info">Details</button>
+          
+
+        </div>
+        <div class="product-item" data-category="clothing">
+          <img src="https://via.placeholder.com/150" alt="Product">
+          <h3>T-Shirt</h3>
+          <p>$20.00</p>
+          <button class="btn add-to-cart">Add to Cart</button>
+          <button class="btn more-info">Details</button>
+        </div>
+        <div class="product-item" data-category="home-living">
+          <img src="https://via.placeholder.com/150" alt="Product">
+          <h3>Couch</h3>
+          <p>$500.00</p>
+          <button class="btn add-to-cart">Add to Cart</button>
+          <button class="btn more-info">Details</button>
+        </div>
+        <div class="product-item" data-category="sports">
+          <img src="https://via.placeholder.com/150" alt="Product">
+          <h3>Football</h3>
+          <p>$25.00</p>
+          <button class="btn add-to-cart">Add to Cart</button>
+          <button class="btn more-info">Details</button>
+        </div>
+      </div>
+      
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 E-Shop. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="product.js"></script>
+</body>
+</html>
